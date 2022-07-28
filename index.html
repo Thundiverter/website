@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Thundiverter</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&display=swap" rel="stylesheet">
+ </head>
+ <body>
+  
+  <main id="app">
+   
+   <header>
+    <a href="/"><img class="logo" :src="returnUrl('tdvr.svg')"></a>
+   </header>
+   
+   <section>
+    <p class="big">Hello, my name's Ivan. I enjoy doing various frontend stuff</p>
+   </section>
+   
+   <section class="skilllist">
+    <div class="skillcard" v-for="skill of skills" :style="returnSkillStyle(skill)" v-show="!(skill?.hidden)"><img :src="returnUrl(skill.img)" class="skillicon">{{skill.title}}</div>
+   </section>
+   
+   <section class="bg">
+    <h2>My projects</h2>
+    
+    <div class="projectslist">
+     
+     <a :href="project.url" class="card" v-for="project of projects">
+      <div class="thumbnail" :style="returnProjectStyle(project)"></div>
+      <h3>{{project.title}}</h3>
+      <p>{{project.desc}}</p>
+      
+      <div class="tagslist" v-show="project?.tags">
+       <div class="tag" v-for="tag of project.tags" :style="returnSkillStyle(skills[tag])">{{skills[tag].title}}</div>
+       </div>
+      
+     </div>
+     
+    </a>
+    </div>
+    
+   </section>
+   
+   <section>
+    <p>More projects on my GitHub</p>
+    <a href="https://gothub.com/Thundiverter" class="skillcard" style="background-color: #161B21; color: white; width: min-content; text-decoration: none;"><img :src="returnUrl('github.svg')" class="skillicon">GitHub</a>
+   </section>
+   
+   <footer>
+    <p>Thundiverter, 2020–{{new Date().getFullYear()}}</p>
+    <p>Icons by <a href="https://icons8.com">icons8.com</a></p>
+   </footer>
+   
+  </main>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/vue@3.2.37/dist/vue.global.prod.js"></script>
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+  
+ </body>
+</html>
