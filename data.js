@@ -83,7 +83,7 @@ const skills = [
  {
   title: 'Vue',
   color: '#41B883', textColor: 'white',
-  img: 'vue.svg'
+  img: 'vue.svg', hidden: true
  },
  {
   title: 'Python',
