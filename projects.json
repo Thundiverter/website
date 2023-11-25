@@ -6,7 +6,7 @@
         "url": "https://box-shadow-generator.netlify.app/",
         "lang": ["en"],
         "year": 2020,
-        "image": "https://raw.githubusercontent.com/thundiverter/website/main/images/box-shadow-generator.png"
+        "image": "https://raw.githubusercontent.com/thundiverter/thundiverter.github.io/main/images/box-shadow-generator.png"
     },
     {
         "title": "Minecraft Quick Guide",
@@ -15,7 +15,7 @@
         "tags": ["HTML", "SCSS", "JavaScript"],
         "url": "https://mcguide.netlify.app/",
         "year": 2020,
-        "image": "https://raw.githubusercontent.com/thundiverter/website/main/images/mcquickguide.png"
+        "image": "https://raw.githubusercontent.com/thundiverter/thundiverter.github.io/main/images/mcquickguide.png"
     },
     {
         "title": "JS Get Key Info",
@@ -24,7 +24,7 @@
         "tags": ["HTML", "SCSS", "JavaScript"],
         "url": "https://jskeyinfo.netlify.app/",
         "year": 2020,
-        "image": "https://raw.githubusercontent.com/thundiverter/website/main/images/jsgetkeyinfo.png"
+        "image": "https://raw.githubusercontent.com/thundiverter/thundiverter.github.io/main/images/jsgetkeyinfo.png"
     },
     {
         "title": "JS Calculator",
@@ -33,7 +33,7 @@
         "tags": ["HTML", "CSS", "JavaScript"],
         "url": "https://jscalcapp.netlify.app/",
         "year": 2020,
-        "image": "https://raw.githubusercontent.com/thundiverter/website/main/images/jscalc.png"
+        "image": "https://raw.githubusercontent.com/thundiverter/thundiverter.github.io/main/images/jscalc.png"
     },
     {
         "title": "MafiaHelp",
@@ -42,7 +42,7 @@
         "tags": ["Vue"],
         "url": "https://mafiah.netlify.app/",
         "year": 2022,
-        "image": "https://raw.githubusercontent.com/thundiverter/website/main/images/mafiahelp.png"
+        "image": "https://raw.githubusercontent.com/thundiverter/thundiverter.github.io/main/images/mafiahelp.png"
     },
     {
         "title": "Symbols (Rewritten)",
@@ -51,6 +51,6 @@
         "description": "A huge list of various symbols",
         "url": "https://smbls.netlify.app/",
         "year": 2023,
-        "image": "https://raw.githubusercontent.com/thundiverter/website/main/images/smbls-rewritten.png"
+        "image": "https://raw.githubusercontent.com/thundiverter/thundiverter.github.io/main/images/smbls-rewritten.png"
     }
 ]
