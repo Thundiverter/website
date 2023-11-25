@@ -44,6 +44,6 @@ h1 {
 .links {
     display: flex;
     flex-wrap: wrap;
-    gap: 3rem;
+    gap: 1rem 3rem;
 }
 </style>

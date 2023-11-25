@@ -4,7 +4,7 @@ import ProjectBadge from './badges/ProjectBadge.vue';
 </script>
 
 <template>
-    <a class="card" href="#">
+    <a class="card" :href="props.project.url" target="_blank">
         <img :src="props.project.image">
         <p class="card-title">{{ props.project.title }}</p>
         <p class="card-description" v-if="props.project.description">{{ props.project.description }}</p>
