@@ -18,7 +18,7 @@ import ExternalLinkIcon from './icons/ExternalLinkIcon.vue'
 
         <div class="links">
             <a href="https://github.com/Thundiverter" target="_blank">GitHub<ExternalLinkIcon /></a>
-            <a href="mailto:ivan.zubkov.dev@gmail.com">ivan.zubkov.dev@gmail.com<ExternalLinkIcon /></a>
+            <!--<a href="mailto:ivan.zubkov.dev@gmail.com">ivan.zubkov.dev@gmail.com<ExternalLinkIcon /></a>-->
         </div>
     </section>
 </template>
