@@ -61,6 +61,7 @@
     },
     {
         "title": "Coursework #1",
+        "year": "2023",
         "lang": ["ru"],
         "tags": ["CSS", "JS", "Node.js", "SQLite"],
         "description": "A part of my course work on the \"Programming Technologies\" discipline",
@@ -71,6 +72,7 @@
     },
     {
         "title": "Coursework #2",
+        "year": "2023",
         "lang": ["ru"],
         "description": "",
         "description_ru": "",
@@ -80,6 +82,7 @@
     },
     {
         "title": "Website for my university group",
+        "year": "2024",
         "lang": ["ru"],
         "description": "A website with homework, timetable, notes and more",
         "description_ru": "Веб-сайт с домашними заданиями, расписанием, конспектами и многим другим",
