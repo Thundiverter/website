@@ -71,22 +71,22 @@
     },
     {
         "title": "Coursework #2",
-        "year": 2023,
         "lang": ["ru"],
         "description": "",
         "description_ru": "",
         "tags": ["Bootstrap 5", "JS", "Node.js", "SQLite"],
         "url": "https://github.com/thundiverter/progtech-course-2",
+        "year": 2023,
         "image": "https://raw.githubusercontent.com/thundiverter/progtech-course-2/main/screenshots/screenshot-waiter-1.png"
     },
     {
         "title": "Website for my university group",
-        "year": 2024,
         "lang": ["ru"],
         "description": "A website with homework, timetable, notes and more",
         "description_ru": "Веб-сайт с домашними заданиями, расписанием, конспектами и многим другим",
         "tags": ["Vue", "Firebase", "Marked.js", "KaTeX"],
         "url": "https://github.com/thundiverter/university-group-website/tree/main",
+        "year": 2024,
         "image": "https://raw.githubusercontent.com/thundiverter/university-group-website/main/03/screenshot_desktop_8.png"
     }
 ]
