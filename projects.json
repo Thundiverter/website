@@ -40,6 +40,16 @@
         "image": "https://raw.githubusercontent.com/thundiverter/thundiverter.github.io/main/images/jscalc.png"
     },
     {
+        "title": "Paronyms",
+        "lang": ["ru"],
+        "tags": ["HTML", "CSS", "JavaScript"],
+        "description": "A school projects for learning paronyms of the Russian language",
+        "description_ru": "Школьный проект со списком паронимов и тренажёром",
+        "url": "https://rus-paronyms.netlify.app/",
+        "year": 2021,
+        "image": "https://raw.githubusercontent.com/thundiverter/thundiverter.github.io/main/images/rus-paronyms.png"
+    },
+    {
         "title": "MafiaHelp",
         "lang": ["ru"],
         "description": "",
@@ -62,7 +72,7 @@
     {
         "title": "Coursework #1",
         "lang": ["ru"],
-        "tags": ["CSS", "JS", "Node.js", "SQLite"],
+        "tags": ["CSS", "JavaScript", "Node.js", "SQLite"],
         "description": "A part of my course work on the \"Programming Technologies\" discipline",
         "description_ru": "Часть курсовой работы по дисциплине «Технологии программирования»",
         "url": "https://github.com/thundiverter/progtech-course",
@@ -74,7 +84,7 @@
         "lang": ["ru"],
         "description": "",
         "description_ru": "",
-        "tags": ["Bootstrap 5", "JS", "Node.js", "SQLite"],
+        "tags": ["Bootstrap 5", "JavaScript", "Node.js", "SQLite"],
         "url": "https://github.com/thundiverter/progtech-course-2",
         "year": 2023,
         "image": "https://raw.githubusercontent.com/thundiverter/progtech-course-2/main/screenshots/screenshot-waiter-1.png"
