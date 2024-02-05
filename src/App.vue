@@ -1,13 +1,13 @@
 <script setup>
 import FirstSection from './components/FirstSection.vue';
-import ProjectsSection from './components/ProjectsSection.vue';
 import Footer from './components/Footer.vue';
+import { RouterView } from 'vue-router';
 </script>
 
 <template>
   <main>
     <FirstSection />
-    <ProjectsSection />
+    <RouterView></RouterView>
     <Footer />
   </main>
 </template>

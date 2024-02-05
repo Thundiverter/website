@@ -1,14 +1,21 @@
 <script setup>
 const props = defineProps(['project']);
 import ProjectBadge from './badges/ProjectBadge.vue';
+import router from '../router';
 </script>
 
 <template>
     <a class="card" :href="props.project.url" target="_blank">
         <img :src="props.project.image">
         <p class="card-title">{{ props.project.title }}</p>
-        <p class="card-description" v-if="props.project.description">{{ props.project.description }}</p>
-        <p class="card-description secondary" v-else>No description provided</p>
+        <div v-if="[undefined, 'en'].includes(router?.currentRoute?.value?.query?.lang)">
+            <p class="card-description" v-if="props?.project?.description">{{ props?.project?.description }}</p>
+            <p class="card-description secondary" v-else>No description provided</p>
+        </div>
+        <div v-if="['ru'].includes(router?.currentRoute?.value?.query?.lang)">
+            <p class="card-description" v-if="props?.project['description_ru']">{{ props?.project['description_ru'] }}</p>
+            <p class="card-description secondary" v-else>Описание отсутствует</p>
+        </div>
         <div class="badges-list">
             <ProjectBadge v-if="props?.project?.year" :title="props.project.year" />
             <ProjectBadge v-if="props?.project?.tags" v-for="tag of props.project.tags" :title="tag" />
@@ -40,6 +47,7 @@ import ProjectBadge from './badges/ProjectBadge.vue';
 }
 .card-description {
     font-size: 1rem;
+    margin-top: 0rem;
 }
 
 .card img {

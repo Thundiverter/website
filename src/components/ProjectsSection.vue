@@ -8,13 +8,18 @@ const projects = ref([]);
 onMounted(() => {
     fetch('https://raw.githubusercontent.com/thundiverter/thundiverter.github.io/main/projects.json')
     .then((res) => res.json())
-    .then((data) => projects.value = data )
+    .then((data) => projects.value = data)
 })
 </script>
 
 <template>
     <section>
-        <h2>Projects</h2>
+        <div v-if="[undefined, 'en'].includes($router?.currentRoute?.value?.query?.lang)">
+            <h2>Projects</h2>
+        </div>
+        <div v-if="['ru'].includes($router?.currentRoute?.value?.query?.lang)">
+            <h2>Проекты</h2>
+        </div>
 
         <div class="projects-grid">
             <ProjectCard v-for="i of projects.slice().reverse()" :project="i" />
