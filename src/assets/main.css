@@ -3,17 +3,16 @@
 :root {
   font-family: 'Azeret Mono', monospace;
 
-  --color-bg: #010C0E;
-  --color-text: #FAFEFF;
-  --color-primary: #11BDE4;
-  --color-secondary: #06333d;
-  --color-accent: #20C8EE;
-  --color-bg-card: #021214;
-
-  --color-primary-semitransparent: rgba(17, 189, 228, .5);
-  --color-secondary-semitransparent: rgba(6, 50, 60, .5);
+  --color-bg: #F5FCFD;
+  --color-text: #061D22;
+  --color-primary: #33C6DB;
+  --color-secondary: #82A6E9;
+  --color-accent: #6381E3;
+  --color-bg-card: #DEEBF9;
 
   --max-width: 1280px;
+
+  --columns: 1;
 }
 
 *, *::before, *::after {
@@ -50,20 +49,41 @@ p {
 }
 
 a {
-  color: var(--color-primary);
+  color: var(--color-accent);
   text-underline-offset: 4px;
   text-decoration-thickness: 2px;
   font-weight: 600;
-  text-decoration-color: var(--color-primary-semitransparent);
+  text-decoration-color: var(--color-primary);
 }
 a:is(:hover, :focus-visible) {
-  text-decoration-color: var(--color-primary);
+  text-decoration-color: var(--color-accent);
 }
 
 a.secondary {
   color: var(--color-secondary);
-  text-decoration-color: var(--color-secondary-semitransparent);
+  text-decoration-color: var(--color-secondary);
 }
 a.secondary:is(:hover, :focus-visible) {
   text-decoration-color: var(--color-secondary);
+}
+
+/* css-loaders.com */
+.loader {
+  width: 60px;
+  aspect-ratio: 4;
+  --_g: no-repeat radial-gradient(circle closest-side, var(--color-accent) 90%,#0000);
+  background: 
+    var(--_g) 0%   50%,
+    var(--_g) 50%  50%,
+    var(--_g) 100% 50%;
+  background-size: calc(100%/3) 100%;
+  animation: l7 1s infinite linear;
+
+  margin: 2rem auto;
+  grid-column: 1 / span var(--columns);
+}
+@keyframes l7 {
+    33%{background-size:calc(100%/3) 0%  ,calc(100%/3) 100%,calc(100%/3) 100%}
+    50%{background-size:calc(100%/3) 100%,calc(100%/3) 0%  ,calc(100%/3) 100%}
+    66%{background-size:calc(100%/3) 100%,calc(100%/3) 100%,calc(100%/3) 0%  }
 }

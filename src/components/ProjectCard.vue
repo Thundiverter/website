@@ -25,7 +25,7 @@ import ProjectBadge from './badges/ProjectBadge.vue';
     display: flex;
     flex-direction: column;
     gap: .75rem;
-    border-radius: 1rem;
+    border-radius: .75rem;
     padding: 1.5rem 1rem;
 
     transition: .1s ease-in-out;
@@ -47,7 +47,7 @@ import ProjectBadge from './badges/ProjectBadge.vue';
     height: 12rem;
     object-fit: cover;
     margin: -1.5rem -1rem .5rem -1rem;
-    border-radius: .5rem .5rem 0 0;
+    border-radius: .75rem .75rem 0 0;
 }
 
 .card:is(:hover, :focus-visible) {

@@ -18,19 +18,20 @@ onMounted(() => {
 
         <div class="projects-grid">
             <ProjectCard v-for="i of projects.slice().reverse()" :project="i" />
+
+            <div v-if="projects?.length === 0" class="loader"></div>
         </div>
     </section>
 </template>
 
 <style scoped>
 section {
-    background: #0E181A;
+    background: #bacbeb;
     border-radius: 1rem;
     padding-bottom: 2rem;
 }
 
 .projects-grid {
-    --columns: 1;
     display: grid;
     grid-template-columns: repeat(var(--columns), 1fr);
     gap: 1rem;
