@@ -10,8 +10,8 @@ import ProjectBadge from './badges/ProjectBadge.vue';
         <p class="card-description" v-if="props.project.description">{{ props.project.description }}</p>
         <p class="card-description secondary" v-else>No description provided</p>
         <div class="badges-list">
-            <ProjectBadge :title="props.project.year" />
-            <ProjectBadge v-for="tag of props.project.tags" :title="tag" />
+            <ProjectBadge v-if="props?.project?.year" :title="props.project.year" />
+            <ProjectBadge v-if="props?.project?.tags" v-for="tag of props.project.tags" :title="tag" />
         </div>
     </a>
 </template>
