@@ -43,7 +43,7 @@
         "title": "Paronyms",
         "lang": ["ru"],
         "tags": ["HTML", "CSS", "JavaScript"],
-        "description": "A school projects for learning paronyms of the Russian language",
+        "description": "A school project for learning paronyms of the Russian language",
         "description_ru": "Школьный проект со списком паронимов и тренажёром",
         "url": "https://rus-paronyms.netlify.app/",
         "year": 2021,
