@@ -108,5 +108,15 @@
         "url": "https://github.com/thundiverter/university-group-website/tree/main",
         "year": "2023−2024",
         "image": "https://raw.githubusercontent.com/thundiverter/university-group-website/main/03/screenshot_desktop_8.png"
+    },
+    {
+        "title": "FANDOM Tools",
+        "lang": ["en", "ru"],
+        "description": "Visual editors and constructors for FANDOM wikis",
+        "description_ru": "Визуальные редакторы и конструкторы для вики-проектов FANDOM",
+        "tags": ["React", "React Suite", "Zustand", "react-i18next"],
+        "url": "https://fandomtools.netlify.app/",
+        "year": "2024",
+        "image": "https://raw.githubusercontent.com/thundiverter/thundiverter.github.io/main/images/WikiTools.png"
     }
 ]
