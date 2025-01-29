@@ -1,0 +1,87 @@
+.site-header__wrapper {
+    padding: calc(0.5 * var(--section-padding)) var(--section-padding);
+    margin: 0 auto;
+    max-width: var(--section-max-width);
+
+    z-index: 1;
+    backdrop-filter: blur(5px);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: .5rem;
+
+    position: sticky;
+    top: 0;
+}
+
+.site-header__image {
+    --w: 24px;
+    width: var(--w);
+}
+
+.site-header__title {
+    color: var(--theme-color-text);
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+
+    user-select: none;
+}
+
+.site-header__title:hover,
+.site-header__title:focus-visible {
+    color: var(--theme-color-accent);
+}
+
+.site-header__title .site-header__image__nofocus,
+.site-header__contact a .site-header__contact__nofocus {
+    display: block;
+}
+.site-header__title .site-header__image__focus,
+.site-header__contact a .site-header__contact__focus {
+    display: none;
+}
+
+.site-header__title:is(:hover, :focus-visible) .site-header__image__nofocus,
+.site-header__contact a:is(:hover, :focus-visible) .site-header__contact__nofocus {
+    display: none;
+}
+.site-header__title:is(:hover, :focus-visible) .site-header__image__focus,
+.site-header__contact a:is(:hover, :focus-visible) .site-header__contact__focus {
+    display: block;
+}
+
+.site-header__wrapper .site-header__contact {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.site-header__wrapper .site-header__contact a {
+    padding: .4rem .5rem;
+    
+    cursor: pointer;
+    border-radius: .24rem;
+    color: var(--theme-color-text);
+}
+
+.site-header__wrapper .site-header__contact a:is(:hover, :focus-visible) {
+    color: var(--theme-color-accent);
+}
+
+.site-header__contact button {
+    background-color: transparent;
+    border: none;
+    padding: .4rem .5rem;
+    cursor: pointer;
+    border-radius: .24rem;
+    color: var(--theme-color-text);
+    position: relative;
+}
+
+.site-header__contact button:is(:hover, :focus-visible) {
+    color: var(--theme-color-accent);
+}

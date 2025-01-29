@@ -1,0 +1,9 @@
+.footer__wrapper {
+    background-color: rgba(var(--theme-color-accent--rgb),.15);
+}
+
+.footer__wrapper .footer__content {
+    margin: 0 auto;
+    padding: var(--section-padding);
+    max-width: var(--section-max-width);
+}

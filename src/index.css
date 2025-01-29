@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap');
+
+* {
+  font-family: "Golos Text", serif;
+  font-optical-sizing: auto;
+}
+
+:root {
+  --section-padding: 1.5rem;
+  --card-padding: 1rem;
+  --section-max-width: 1340px;
+
+  --theme-background-primary: white;
+  --theme-background-primary--rgb: 255, 255, 255;
+  --theme-background-secondary: #BACBEB66;
+  --theme-color-primary: #33C6DB;
+  --theme-color-accent: #41569b;
+  --theme-color-accent--rgb: 94, 120, 207;
+  --theme-color-secondary2: #82A6E9;
+  --theme-color-text: black;
+  --theme-color-text-secondary: gray;
+
+  font-size: .875rem;
+}
+
+body {
+  margin: 0;
+  background-color: var(--theme-background-primary);
+}
+
+body.is-dark-theme {
+  --theme-background-primary: #09090B;
+  --theme-background-primary--rgb: 9, 9, 11;
+  --theme-background-secondary: #BACBEB66;
+  --theme-color-primary: #202022;
+  --theme-color-accent: #6381E3;
+  --theme-color-accent--rgb: 100,100,100;
+  --theme-color-secondary2: #82A6E9;
+  --theme-color-text: #FAFAFA;
+  --theme-color-text-secondary: #A1A1AA;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+  color: var(--theme-color-text);
+}
+
+:is(h1, h2, h3, h4, h5, h6) > span {
+  padding: 0 .125rem;
+  background: linear-gradient(to top, rgba(var(--theme-color-accent--rgb), 0.15) 54%, transparent 54%, transparent 100%);
+}
+
+/* Mobile/desktop only */
+.mobile-only {
+  display: none;
+}
+.desktop-only {
+  display: initial;
+}
+@media (max-width: 768px) {
+  .mobile-only {
+      display: initial;
+  }
+  .desktop-only {
+    display: none;
+  }
+}

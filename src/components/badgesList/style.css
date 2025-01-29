@@ -1,0 +1,6 @@
+.badges-list__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: .5rem;
+}
